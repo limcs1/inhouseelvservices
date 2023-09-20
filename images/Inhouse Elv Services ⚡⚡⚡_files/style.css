@@ -1,0 +1,173 @@
+/* CSS for the web page header */
+body{
+  /* font-family: 'VT323', monospace;  */
+  font-family: 'Noto Serif', serif;
+}
+
+/* Container for the header */
+header,
+footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    background-color: none ; /* Set the background color */
+    color: #333; /* Set the text color */
+    /* padding: 20px; Add some padding */
+    text-align: right; /* Align the content to the right */
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-between; /* Distribute content with space between logo and list */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Make the header full-width */
+    position: relative; /* Set the header position to fixed */
+    top: 0; /* Stick the header to the top of the viewport */
+    left: 0; /* Stick the header to the left side of the viewport */
+  }
+
+  header h2{
+    margin: 0;
+  }
+  
+  /* Styling for the navigation menu */
+  .nav-menu {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+  }
+  
+  /* Styling for the navigation menu items */
+  .nav-menu li {
+    display: inline-block; /* Display items horizontally */
+    margin-right: 20px; /* Add some spacing between items */
+  }
+  
+  /* Styling for the navigation links */
+  .nav-menu li a {
+    color: #333; /* Set link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Apply different styles to the current active page link */
+  .nav-menu li a.active {
+    font-weight: normal;
+  }
+  
+  /* Example specific styles for individual menu items */
+  .nav-menu li a.about {
+    color: #333; /* Custom color for "About Us" link */
+  }
+  
+  .nav-menu li a.products {
+    color: #333; /* Custom color for "Products" link */
+  }
+  
+  .nav-menu li a.services {
+    color: #333; /* Custom color for "Services" link */
+  }
+  
+  .nav-menu li a.gallery {
+    color: #333; /* Custom color for "Gallery" link */
+  }
+  
+  .nav-menu li a.contact {
+    color: #333; /* Custom color for "Contact Us" link */
+  }
+
+  /* Styling for the rest of the page content */
+
+  .image-container {
+    position: relative;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 0.7
+  }
+  
+  .quote-container {
+    position: absolute;
+    top: 50%; /* Move the quote block to the middle vertically */
+    left: 50%; /* Move the quote block to the middle horizontally */
+    transform: translate(-50%, -50%); /* Center the quote block */
+    background-color: rgba(255, 255, 255, 0.281); /* Adjust the alpha value (0.7) to control transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle box shadow */
+  }
+
+  .quote-container p{
+    text-align: right;
+  }
+  
+  blockquote {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+    color: #333;
+    margin: 0;
+  }
+
+/* .footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: relative;
+  
+} */
+
+/* Footer content container styles */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: grey;
+  width: 100%;
+}
+
+/* Company title styles in the footer */
+.company-title {
+  margin: 0;
+}
+
+/* Footer navigation styles */
+.footer-content nav {
+  margin-top: 10px; /* Add some spacing between the company title and links */
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+.footer-content nav a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 20px; /* Add spacing between links */
+}
+
+.footer-content a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Company trademark styles */
+.company-trademark {
+  bottom: 0px;
+  right: 0px;
+}
+
+.footer-nav-menu {
+  list-style-type: none; /* Remove default list styles */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+} 
+
+.footer-nav-menu li {
+  display: inline-block; /* Display items horizontally */
+  margin-right: 20px; /* Add some spacing between items */
+  margin-top: 20px;
+}
+  

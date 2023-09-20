@@ -1,0 +1,371 @@
+
+body{
+    background-image: linear-gradient(rgb(201, 201, 201), rgb(81, 79, 79));
+    /* margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px; */
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0 0 10% 0;
+    /* top right bottom left */
+    text-align: justify;
+    /* No Scrollbar */
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    /* No Select */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* fonts */
+h1{
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Bungee Spice', cursive;
+    color: black; */
+}
+
+li{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+p{
+    /* font-family: 'Noto Serif', serif; */
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+}
+
+blockquote{
+    font-family: 'PT Serif', serif;
+}
+
+.bold{
+    /* font-family: 'Croissant One', cursive; */
+    font-family: 'Lobster', cursive;
+    letter-spacing: 0.15em;
+}
+
+.sea{
+    font-family: 'Bungee Spice', cursive;
+}
+
+/* Global */
+.title-header{
+    padding-left: 2%;
+    padding-top: 3%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    margin: 0;
+    background-color: rgb(159, 159, 159);
+    text-align: start;
+    font-size: 64px;
+}
+
+.info{
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(125, 125, 125);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+
+/* Header Style */
+header{
+    z-index: 2;
+    padding-left: 2%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+}
+
+header h1{
+    margin-left: 20px;
+}
+
+.nav-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-menu li a{
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover{
+    text-decoration: underline;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+/* Landing Page Style */
+.landingpage{
+    margin: 0
+}
+
+.landingpage img{
+    margin: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.image-container{
+    position: relative; 
+    /* important.. lol */
+}
+
+.quote-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    /* center the quote block */
+    background-color: rgba(204, 178, 228, 0.499);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.548);
+}
+.quote-container a{
+    text-decoration: none;
+}
+
+.quote-container p{
+    text-align: right;
+    font-weight: bold;
+    color: black;
+}
+
+.quote-container:hover{
+    background-color: rgba(144, 140, 148, 0.523);
+}
+
+blockquote{
+    text-align: left;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;   
+    margin: 0;
+}
+
+.emoji{
+    display: inline-block;
+    transform: rotate(30deg)
+}
+
+
+/* ABOUTUs */
+.aboutus img{
+    z-index: -1;
+    opacity: .7;
+}
+
+.aboutus-wrap{
+    margin-top: 5% ;
+    margin-bottom: 5% ;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    justify-content: center;
+    gap: none; /* Adjust the gap between elements */
+    background-color: rgb(0, 0, 0);
+}
+
+.vision, .mission{
+    color: white;
+    padding: 5%;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+}
+/* products */
+.grid-container{
+    padding: 1px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 1px;
+    column-gap: 1px;
+    box-sizing: border-box;
+}
+
+.grid-item:hover{
+    background-color: rgba(255, 255, 255, 0.779);
+    border: none;
+}
+
+.grid-item{
+    padding: 4%;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: white;
+    min-height:fit-content;
+    align-content: center;
+    align-items: center;
+    display:grid;
+    justify-content: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Services */
+.services img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    max-width: 100%;
+
+}
+
+.services .info{
+    background-color: rgb(179, 179, 179);
+}
+
+/* Gallery */
+.booth {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* max-height: 500px; */
+    overflow: hidden;
+}
+
+.image-wrapper{
+    width: 800px;
+    height: 600px;
+    justify-items: center;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    display: flex;
+}
+
+.nav-button{
+    border: none;
+    display:inline;
+    height: 600px;
+    width: 8%;
+    cursor: pointer;
+    background-color: white;
+    color: white;
+}
+
+.nav-button:hover{
+    background-color: rgb(10, 75, 0);
+}
+
+.gallery-image{
+    width: 700px;
+    max-width: 100%;
+}
+
+
+
+/* Contact Us */
+/* Style for the contact form container */
+
+.mapwrap{
+    display: flex;
+}
+
+
+.smalltitle{
+    font-size: larger;
+}
+
+.contact-form {
+
+    align-items: center;
+    max-width: 550px;
+    width: 50%;
+    min-width: 550px;
+    margin: 0;
+    padding: 0 2%;
+    border: none;
+    background-color: #bdbdbd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Style for form group */
+.form-group {
+    margin-bottom:0;
+}
+
+/* Style for labels */
+label {
+    display: block;
+    margin: 1% 0 1% 0;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    max-width: 550px;
+    max-height: fit-content;
+    width: 550px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
